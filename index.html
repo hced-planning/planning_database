@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis Collaboration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+        
+        .button {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .button:hover {
+            border-color: #4CAF50;
+            border-width: 3px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer img {
+            width: 100px; /* Adjust the width as per your requirement */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        .button.animated {
+            animation: pulse 0.5s;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./lib/img/plnlogo.png" alt="County Planning Logo">
+            <h1>Data Analysis Collaboration</h1>
+        </header>
+        <main>
+            <p>Welcome to our data analysis collaboration platform. Join us to explore and analyze data together.</p>
+            <a href="./05-compartments/001.4-snowflake-environment/snowflake-environment.html" class="button">Get Started</a>
+        </main>
+        <footer class="footer">
+            <p>Contact Information</p>
+            <p>Email: hced-planning@harriscountytx.gov</p>
+            <img src="./lib/img/hced.png" alt="County Logo">
+        </footer>
+    </div>
+    <script>
+        // JavaScript code can be embedded here
+        function animateButton() {
+            var button = document.querySelector('.button');
+            button.classList.add('animated');
+        }
+    </script>
+</body>
+
+</html>
